@@ -1,0 +1,9 @@
+import csv
+
+with open('UTS.csv', 'w') as csvfile:
+    fieldnames = ['ASN', 'AS Name']
+    writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+
+    writer.writeheader()
+    writer.writerow({'ASN': 'AS4800', 'AS Name': 'LINTASARTA'})
+
